@@ -1,0 +1,9 @@
+<h5>
+    Detalhes do Curso
+</h5>
+
+<p>ID: {{ id }}</p>
+<p>Curso: {{ curso?.nome }}</p>
+
+<button type="submit" class="btn btn-primary" (click)="redirectTo(id)">Editar</button>
+<button type="submit" class="btn btn-primary" (click)="onDelete(id)">Deletar</button>

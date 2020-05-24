@@ -2,9 +2,10 @@
 
 json-server --watch db.json
 
-## MyRequestsHttp
+# MYRotas
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
+To acess the application, use login: usuario@email.com.br and password: 123456
 
 ## Development server
 

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "my-requests-http": {
+    "MY-rotas": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/my-requests-http",
+            "outputPath": "dist/MY-rotas",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -24,9 +24,16 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.css",
+              "./node_modules/materialize-css/dist/css/materialize.css"
+
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.js",
+              "./node_modules/hammerjs/hammer.js",
+              "./node_modules/materialize-css/dist/js/materialize.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -62,18 +69,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "my-requests-http:build"
+            "browserTarget": "MY-rotas:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "my-requests-http:build:production"
+              "browserTarget": "MY-rotas:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "my-requests-http:build"
+            "browserTarget": "MY-rotas:build"
           }
         },
         "test": {
@@ -88,9 +95,15 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "./node_modules/materialize-css/dist/css/materialize.css"
+
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.js",
+              "./node_modules/hammerjs/hammer.js",
+              "./node_modules/materialize-css/dist/js/materialize.js"
+            ]
           }
         },
         "lint": {
@@ -110,15 +123,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "my-requests-http:serve"
+            "devServerTarget": "MY-rotas:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "my-requests-http:serve:production"
+              "devServerTarget": "MY-rotas:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "my-requests-http"
+  "defaultProject": "MY-rotas"
 }

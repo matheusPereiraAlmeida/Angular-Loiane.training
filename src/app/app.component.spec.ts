@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'my-requests-http'`, () => {
+  it(`should have as title 'MY-rotas'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('my-requests-http');
+    expect(app.title).toEqual('MY-rotas');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('my-requests-http app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('MY-rotas app is running!');
   });
 });

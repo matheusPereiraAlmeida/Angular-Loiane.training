@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('my-requests-http app is running!');
+    expect(page.getTitleText()).toEqual('MY-rotas app is running!');
   });
 
   afterEach(async () => {
